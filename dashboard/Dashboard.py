@@ -8,7 +8,7 @@ import streamlit as st
 # Load data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('day_df_clean.csv')  
+    data = pd.read_csv('dashboard/day_df_clean.csv')  
     data['dteday'] = pd.to_datetime(data['dteday'])  
     return data
 
